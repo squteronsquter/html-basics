@@ -31,6 +31,12 @@ These are the commands you might need:
 
 `git add .`
 
+// add all files and folders to local repository
+
 `git commit -m "First commit"`
 
+// commit (save) changes to repository
+
 `git push origin main`
+
+// push all updated files and folders to remote repository
