@@ -15,13 +15,14 @@
         padding: 0.4rem 0.8rem;
       }
       hr {
-        border-top: 150px solid white;
-        border-bottom: 150px solid white;
+        border-top: 10px solid white;
+        border-bottom: 10px solid white;
       }
-      .form-labels {
+      label {
         font-style: italic;
       }
-      input {
+      input,
+      textarea {
         display: block;
       }
     </style>
@@ -366,7 +367,23 @@ line breaks
           rows="10"
           placeholder="Wpisz tekst wiadomości/Type your message here..."
         ></textarea>
-
+        <label for="password" id="password">
+          Hasło/Password <sup>(*)</sup>:
+        </label>
+        <input type="password" id="password" />
+        <label for="url" id="url"
+          >Strona inernetowa/Website <sup>(*)</sup></label
+        >
+        <input type="url" id="url" name="url" />
+        <label for="search" id="search">Wyszukaj/Search</label>
+        <input
+          style="display: inline-block"
+          type="search"
+          name="search"
+          id="search"
+        />
+        <button style="display: inline-block">Wyszukaj/Search</button>
+        <hr />
         <input type="button" value="Wyślij/Send" />
         <input type="button" value="Guzik/Button" />
         <input type="reset" value="Wyczyść/Reset" />
