@@ -18,6 +18,12 @@
         border-top: 150px solid white;
         border-bottom: 150px solid white;
       }
+      .form-labels {
+        font-style: italic;
+      }
+      input {
+        display: block;
+      }
     </style>
   </head>
   <body>
@@ -331,9 +337,36 @@ line breaks
     </section>
     <section id="form">
       <h2>Formularze - Forms</h2>
+      <h3>Formularz kontaktowy/Contact form</h3>
+      <p><sup>*</sup> Pola obowiązkowe</p>
+
       <form action="" method="post">
-        <input type="text" name="" id="" placeholder="Input text field" />
-        <input type="email" name="" id="" placeholder="Your email address" />
+        <label class="form-labels" for="sendername">
+          Imię i nazwisko <sup>(*)</sup>:
+          <input
+            type="text"
+            name="sendername"
+            id="sendername"
+            placeholder="Proszę wpisać/Please type here..."
+          />
+        </label>
+        <label class="form-labels" for="useremail">
+          Adres email <sup>(*)</sup>:
+          <input
+            type="email"
+            name="useremail"
+            id="useremail"
+            placeholder="Poprawny adres email/You active email address..."
+          />
+        </label>
+        <textarea
+          name="messagecontent"
+          id="messagecontent"
+          cols="30"
+          rows="10"
+          placeholder="Wpisz tekst wiadomości/Type your message here..."
+        ></textarea>
+
         <input type="button" value="Wyślij/Send" />
       </form>
     </section>
